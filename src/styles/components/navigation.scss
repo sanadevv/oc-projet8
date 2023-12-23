@@ -1,0 +1,22 @@
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    li {
+      color: $main-color;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%; /* 34.224px */
+    }
+  }
+  .nav-active {
+    text-decoration: underline;
+    color: $main-color;
+  }
+}

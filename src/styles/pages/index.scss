@@ -1,0 +1,16 @@
+@import "./-settings";
+@import "../components/navigation.scss";
+@import "../components/header.scss";
+@import "../components/logo.scss";
+@import "../components/footer.scss";
+@import "../components/banner.scss";
+@import "../components/cards.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body {
+  margin: 0;
+}
