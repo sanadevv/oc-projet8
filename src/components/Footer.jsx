@@ -6,7 +6,7 @@ import vectors from "../assets/Vectors.svg";
 const Footer = () => {
   return (
     <footer>
-      {/* <div className="footer"> */}
+     
       <div className="logo">
         <img src={vectork} className="" alt="logo" />
         <img src={Groupe} className="" alt="logo" />
@@ -14,7 +14,7 @@ const Footer = () => {
         <img src={vectors} className="" alt="logo" />
       </div>
       <p>© 2020 Kasa. All rights reserved</p>
-      {/* </div> */}
+     
     </footer>
   );
 };

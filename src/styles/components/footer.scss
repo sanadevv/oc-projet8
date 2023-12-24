@@ -7,12 +7,13 @@ footer {
   gap: 15px;
   flex-shrink: 0;
   background: #000;
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
   height: 100px;
   padding-bottom: 0px;
   padding-top: 90px;
-  //   .footer {
+  margin-top: auto;
+
   .logo {
     display: flex;
     flex-direction: row;
@@ -29,5 +30,4 @@ footer {
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
   }
-  //   }
 }

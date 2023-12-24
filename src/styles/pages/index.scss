@@ -5,11 +5,16 @@
 @import "../components/footer.scss";
 @import "../components/banner.scss";
 @import "../components/cards.scss";
+@import "../components/housingCard.scss";
 
 .layout {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  min-height: 100vh;
+  // justify-content: space-between;
+  div {
+    flex: 1;
+  }
 }
 body {
   margin: 0;

@@ -1,11 +1,11 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Cards from "../components/Cards";
+import HousingCard from "../components/HousingCard";
 const Home = () => {
   return (
     <div>
       <Banner />
-      <Cards />
+      <HousingCard />
     </div>
   );
 };

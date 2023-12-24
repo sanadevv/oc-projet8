@@ -1,13 +1,11 @@
 import React from "react";
-import data from "../assets/datas/housingData.js";
+// import data from "../assets/datas/housingData.js";
 import HousingCard from "./HousingCard.jsx";
 
 const Cards = () => {
   return (
     <div className="cards">
-      {data.map((housing) => (
-        <HousingCard key={housing.id} />
-      ))}
+      <HousingCard />
     </div>
   );
 };
