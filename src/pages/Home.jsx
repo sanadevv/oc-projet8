@@ -1,10 +1,10 @@
 import React from "react";
-import Banner from "../components/Banner";
 import HousingCard from "../components/HousingCard";
+import HomeBanner from "../components/HomeBanner";
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <HomeBanner />
       <HousingCard />
     </div>
   );

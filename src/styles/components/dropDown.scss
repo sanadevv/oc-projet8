@@ -1,0 +1,40 @@
+.drop-down {
+  border-radius: 10px 10px 5px 5px;
+  background: $backround-color;
+  margin: 40px 200px;
+  .top-bar {
+    border-radius: 5px;
+    background: $main-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    height: 32px;
+
+    h3 {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%; /* 34.224px */
+    }
+  }
+  .content-container {
+    padding: 20px;
+    // display: none;
+    p {
+      margin: 0px;
+      color: #ff6060;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 142.6%; /* 25.668px */
+    }
+  }
+}
+// .content-container:active {
+//   transform: translateY(-100%);
+//   transition: all 300ms ease-in-out;
+// }
