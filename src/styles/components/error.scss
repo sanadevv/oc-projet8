@@ -1,0 +1,37 @@
+.error-container {
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 139px;
+  h1 {
+    color: #ff6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%; /* 410.688px */
+    margin: 0px;
+  }
+  p {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 51.336px */
+    margin: 0px;
+  }
+  a {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration-line: underline;
+    padding-bottom: 139px;
+    margin: 0px;
+  }
+}
