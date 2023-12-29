@@ -1,4 +1,4 @@
-const housingData = [
+const data = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",
@@ -579,4 +579,4 @@ const housingData = [
     tags: ["Louvre", "Marais", "Rivoli"],
   },
 ];
-export default housingData;
+export default data;
