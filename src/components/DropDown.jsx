@@ -10,7 +10,7 @@ const DropDown = ({ title, content }) => {
     setIsCollapsed(!isCollapsed);
   };
   return (
-    <div key={title} className="drop-down">
+    <div className="drop-down">
       <div className="top-bar">
         <h3>{title}</h3>
         <img

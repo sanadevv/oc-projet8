@@ -65,9 +65,12 @@
     display: flex;
     flex-direction: row;
     gap: 76px;
-    .drop-down {
+    .dropdown-container {
       width: 50%;
-      // margin: 0px;
+      height: auto;
+      // .drop-down {
+
+      // }
     }
   }
 }

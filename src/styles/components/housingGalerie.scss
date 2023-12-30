@@ -1,0 +1,36 @@
+.image-gallery {
+  height: 415px;
+  position: relative;
+  .housing-image {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+  }
+  .left-arrow {
+    width: 46.68px;
+    height: 79.2px;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 250px;
+    left: 30px;
+  }
+  .right-arrow {
+    width: 46.68px;
+    height: 79.2px;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 250px;
+    left: 1030px;
+  }
+  .image-count {
+    position: relative;
+    bottom: 130px;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+  }
+}
