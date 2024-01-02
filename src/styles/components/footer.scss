@@ -1,19 +1,22 @@
 footer {
   display: flex;
-  padding: 66px 464px 29px 463px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
   background: #000;
-  // position: absolute;
-  // bottom: 0;
   height: 100px;
   padding-bottom: 0px;
   padding-top: 90px;
   margin-top: 50px;
-
+  @include respond-to($small-screen) {
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 0px;
+    margin-top: 27px;
+  }
   .logo {
     display: flex;
     flex-direction: row;
@@ -29,5 +32,9 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
+    @include respond-to($small-screen) {
+      font-size: 12px;
+      line-height: 142.6%; /* 17.112px */
+    }
   }
 }

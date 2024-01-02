@@ -2,5 +2,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 45px 100px 50px 100px;
+  margin: 45px 10% 50px 10%;
+  @include respond-to($small-screen) {
+    margin: 20px 5% 27px 5%;
+  }
 }

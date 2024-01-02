@@ -15,6 +15,17 @@ const HousingGalerie = ({ pictures }) => {
       prevIndex < pictures.length - 1 ? prevIndex + 1 : 0
     );
   };
+  if (pictures.length <= 1) {
+    return (
+      <div className="image-gallery">
+        <img
+          src={pictures[currentImageIndex]}
+          alt={`${currentImageIndex}`}
+          className="housing-image"
+        />
+      </div>
+    );
+  }
   return (
     <div className="image-gallery">
       <img

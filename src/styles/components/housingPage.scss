@@ -1,62 +1,114 @@
 .housing-page {
-  margin: 0px 100px;
+  margin: 0px 10%;
   color: $main-color;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
+  @include respond-to($small-screen) {
+    margin: 0 5%;
+  }
 
   .carrousel {
     width: 100%;
     height: 415px;
     background-color: $main-color;
     border-radius: 25px;
+    @include respond-to($small-screen) {
+      height: 255px;
+    }
   }
   .housing-info-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include respond-to($small-screen) {
+      flex-direction: column;
+    }
     .housing-info {
       h1 {
         font-size: 36px;
-        line-height: 142.6%; /* 51.336px */
+        line-height: 142.6%;
         margin-bottom: 0px;
+        @include respond-to($small-screen) {
+          font-size: 18px;
+        }
       }
       p {
         font-size: 18px;
-        line-height: 142.6%; /* 25.668px */
+        line-height: 142.6%;
         margin-top: 0px;
+        @include respond-to($small-screen) {
+          font-size: 14px;
+        }
       }
       .tags {
         display: flex;
         flex-direction: row;
         gap: 10px;
         .tag {
-          //   width: 115px;
+          min-width: 115px;
           height: 21px;
-          // flex-shrink: 0;
+          flex-shrink: 0;
           border-radius: 10px;
           background: $main-color;
           color: white;
-          padding: 2px 5px;
+          padding: 4px 5px 0 5px;
+          text-align: center;
+          @include respond-to($small-screen) {
+            min-width: 84px;
+            height: 18px;
+            font-size: 10px;
+          }
         }
       }
     }
-    .host_rating {
+    .host-rating {
       display: flex;
       flex-direction: column;
+      gap: 27px;
+      @include respond-to($small-screen) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 24px;
+      }
       .host {
         display: flex;
         flex-direction: row;
-        justify-content: end;
-        gap: 10px;
+        justify-content: flex-end;
+        text-align: right;
+        gap: 25px;
         margin-top: 24px;
+        @include respond-to($small-screen) {
+          margin-top: 0px;
+          gap: 13px;
+        }
         p {
           width: 60px;
+          text-align: right;
+          font-size: 18px;
+          line-height: 142.6%; /* 25.668px */
+          @include respond-to($small-screen) {
+            font-size: 12px;
+            margin: 0px;
+          }
         }
         img {
           border-radius: 100%;
           width: 64px;
           height: 64px;
+          @include respond-to($small-screen) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+      .rating {
+        width: 180px;
+        height: 36px;
+        flex-shrink: 0;
+        @include respond-to($small-screen) {
+          width: 180px;
+          height: 18px;
         }
       }
     }
@@ -65,12 +117,16 @@
     display: flex;
     flex-direction: row;
     gap: 76px;
+    @include respond-to($small-screen) {
+      flex-direction: column;
+      gap: 0px;
+    }
     .dropdown-container {
       width: 50%;
       height: auto;
-      // .drop-down {
-
-      // }
+      @include respond-to($small-screen) {
+        width: 100%;
+      }
     }
   }
 }

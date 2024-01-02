@@ -1,0 +1,11 @@
+.empty-star {
+  color: $Star-empty-color;
+}
+.fa-star {
+  font-size: 23px;
+  margin: 5px;
+  @include respond-to($small-screen) {
+    font-size: 15px;
+    margin: 13px 3px;
+  }
+}

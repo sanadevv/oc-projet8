@@ -1,10 +1,10 @@
-import image from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
-function AboutBanner() {
+function Banner({ image, text }) {
   return (
     <div className="kasa-banner">
       <img src={image} alt="montagne" />
       <div className="banner-div"></div>
+      <p>{text}</p>
     </div>
   );
 }
-export default AboutBanner;
+export default Banner;

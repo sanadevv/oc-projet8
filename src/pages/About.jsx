@@ -1,12 +1,14 @@
 import React from "react";
-import AboutBanner from "../components/AboutBanner";
+import Banner from "../components/Banner";
 import DropDown from "../components/DropDown";
 import data from "../assets/datas/aboutContent";
+import image from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
+
 const About = () => {
   return (
     <div>
-      <AboutBanner />
-      <div className="apropos-container">
+      <Banner image={image} text={""} />
+      <div className="about-container">
         {data.map((item) => (
           <DropDown
             key={item.title}

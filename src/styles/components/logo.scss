@@ -2,4 +2,8 @@
   width: 210px;
   height: 68px;
   flex-shrink: 0;
+  @include respond-to($small-screen) {
+    width: 145px;
+    height: 46.881px;
+  }
 }

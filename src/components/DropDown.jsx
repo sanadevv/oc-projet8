@@ -21,7 +21,7 @@ const DropDown = ({ title, content }) => {
       </div>
       {!isCollapsed && (
         <div className="content-container">
-          <p>{content}</p>
+          <div className="equipment-list">{content}</div>
         </div>
       )}
     </div>

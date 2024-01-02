@@ -1,7 +1,7 @@
 .drop-down {
   border-radius: 10px 10px 5px 5px;
   background: $backround-color;
-  margin: 40px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   .top-bar {
     border-radius: 5px;
     background: $main-color;
@@ -10,7 +10,9 @@
     padding: 10px 15px;
     align-items: center;
     height: 32px;
-
+    @include respond-to($small-screen) {
+      padding: 0 10px;
+    }
     h3 {
       color: #fff;
       font-family: Montserrat;
@@ -18,14 +20,24 @@
       font-style: normal;
       font-weight: 500;
       line-height: 142.6%; /* 34.224px */
+      @include respond-to($small-screen) {
+        font-size: 13px;
+        line-height: 142.6%; /* 18.538px */
+      }
     }
     img {
       cursor: pointer;
+      @include respond-to($small-screen) {
+        width: 25px;
+      }
     }
   }
   .content-container {
     padding: 20px;
-    p {
+    @include respond-to($small-screen) {
+      padding: 10px;
+    }
+    .equipment-list {
       margin: 0px;
       color: #ff6060;
       font-family: Montserrat;
@@ -33,15 +45,21 @@
       font-style: normal;
       font-weight: 400;
       line-height: 142.6%; /* 25.668px */
+      list-style: none;
+      padding-left: 0px;
+      @include respond-to($small-screen) {
+        font-size: 12px;
+        line-height: 142.6%; /* 17.112px */
+      }
     }
-    // animation: all 300ms ease-in-out;
+    animation: all 300ms ease-in-out;
   }
 }
-// @keyframes slide-in {
-//   0% {
-//     transform: translateY(-100%);
-//   }
-//   100% {
-//     transform: translateY (0%);
-//   }
-// }
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY (0%);
+  }
+}

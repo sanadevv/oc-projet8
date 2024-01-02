@@ -1,3 +1,10 @@
 $main-color: #ff6060;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 $backround-color: #f6f6f6;
+$Star-empty-color: #e3e3e3;
+$small-screen: 768px;
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}

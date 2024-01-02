@@ -1,6 +1,9 @@
 .image-gallery {
   height: 415px;
   position: relative;
+  @include respond-to($small-screen) {
+    height: 255px;
+  }
   .housing-image {
     border-radius: 25px;
     height: 100%;
@@ -10,27 +13,44 @@
     width: 46.68px;
     height: 79.2px;
     flex-shrink: 0;
-    position: relative;
-    bottom: 250px;
-    left: 30px;
+    position: absolute;
+    // bottom: 60%;
+    top: 41%;
+    left: 2%;
+    cursor: pointer;
+    @include respond-to($small-screen) {
+      width: 24px;
+      height: 24px;
+      left: 1%;
+    }
   }
   .right-arrow {
     width: 46.68px;
     height: 79.2px;
     flex-shrink: 0;
-    position: relative;
-    bottom: 250px;
-    left: 1030px;
+    position: absolute;
+    top: 41%;
+    right: 2%;
+    cursor: pointer;
+    @include respond-to($small-screen) {
+      width: 24px;
+      height: 24px;
+      right: 1%;
+    }
   }
   .image-count {
-    position: relative;
-    bottom: 130px;
+    position: absolute;
+    bottom: 4%;
+    right: 50%;
     color: #fff;
     text-align: center;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
+    line-height: 142.6%;
+    @include respond-to($small-screen) {
+      display: none;
+    }
   }
 }
