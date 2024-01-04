@@ -21,7 +21,9 @@ const HousingGalerie = ({ pictures }) => {
         <img
           src={pictures[currentImageIndex]}
           alt={`${currentImageIndex}`}
-          className="housing-image"
+          className={
+            currentImageIndex ? "housing-image" : "housing-image current-image"
+          }
         />
       </div>
     );

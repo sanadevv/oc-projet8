@@ -8,7 +8,13 @@
     border-radius: 25px;
     height: 100%;
     width: 100%;
+
+    transform: opacity 300ms ease-in-out;
   }
+  .image-gallery .housing-image:not(.current-image) {
+    opacity: 0;
+  }
+
   .left-arrow {
     width: 46.68px;
     height: 79.2px;
@@ -53,4 +59,7 @@
       display: none;
     }
   }
+}
+.current-image {
+  opacity: 1;
 }

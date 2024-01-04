@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useParams } from "react-router-dom";
 import data from "../assets/datas/housingData";
 import DropDown from "../components/DropDown";
@@ -8,15 +7,9 @@ import Rating from "../components/Rating";
 
 const HousingPage = () => {
   const { id } = useParams();
-
   const housingPage = data.find((housing) => housing.id === id);
   const tags = housingPage.tags;
   if (!housingPage) return <div>Logement non trouvé.</div>;
-  // const equipment= {
-  //   housingPage.equipments.map((equipment)=>{
-
-  //   })
-  // }
   return (
     <div className="housing-page">
       <div className="carrousel">
@@ -27,8 +20,8 @@ const HousingPage = () => {
           <h1>{housingPage.title} </h1>
           <p>{housingPage.location} </p>
           <div className="tags">
-            {tags.map((tag) => (
-              <div key={tag} className="tag">
+            {tags.map((tag, index) => (
+              <div key={index} className="tag">
                 {tag}
               </div>
             ))}
@@ -51,8 +44,8 @@ const HousingPage = () => {
         <div className="dropdown-container">
           <DropDown
             title="Equipements"
-            content={housingPage.equipments.map((item) => (
-              <li key={item}>{item}</li>
+            content={housingPage.equipments.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           />
         </div>

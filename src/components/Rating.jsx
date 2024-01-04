@@ -5,11 +5,11 @@ const Rating = ({ rating }) => {
 
   const stars = [];
   for (let i = 0; i < fullStars; i++) {
-    stars.push(<i className="fa-solid fa-star"></i>);
+    stars.push(<i key={i + 5} className="fa-solid fa-star"></i>);
   }
   const emptyStars = 5 - fullStars;
   for (let i = 0; i < emptyStars; i++) {
-    stars.push(<i className="fa-solid fa-star empty-star"></i>);
+    stars.push(<i key={i} className="fa-solid fa-star empty-star"></i>);
   }
 
   return stars;
