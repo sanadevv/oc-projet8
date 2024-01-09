@@ -1,15 +1,15 @@
 @import "./-settings";
-@import "../components/navigation.scss";
-@import "../components/header.scss";
-@import "../components/logo.scss";
-@import "../components/footer.scss";
-@import "../components/banner.scss";
-@import "../components/housingCard.scss";
-@import "../components/dropDown.scss";
-@import "./error.scss";
-@import "./housingPage.scss";
-@import "../components/housingGalerie.scss";
-@import "../components/rating.scss";
+@import "../components/navigation/navigation.scss";
+@import "../components/header/header.scss";
+@import "../components/logo/logo.scss";
+@import "../components/footer/footer.scss";
+@import "../components/banner/banner.scss";
+@import "../components/housingCard/housingCard.scss";
+@import "../components/dropDown/dropDown.scss";
+@import "./error/error.scss";
+@import "./housingPage/housingPage.scss";
+@import "../components/housingGalerie/housingGalerie.scss";
+@import "../components/rating/rating.scss";
 
 // .layout {
 //   display: flex;

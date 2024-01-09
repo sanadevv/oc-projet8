@@ -1,15 +1,20 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import data from "../assets/datas/housingData";
-import DropDown from "../components/DropDown";
-import HousingGalerie from "../components/HousingGalerie";
-import Rating from "../components/Rating";
+import data from "../../assets/datas/housingData";
+import DropDown from "../../components/dropDown/DropDown";
+import HousingGalerie from "../../components/housingGalerie/HousingGalerie";
+import Rating from "../../components/rating/Rating";
+import Error from "../error/Error";
 
 const HousingPage = () => {
   const { id } = useParams();
+
   const housingPage = data.find((housing) => housing.id === id);
+
+  if (!housingPage) {
+    return <Error />;
+  }
   const tags = housingPage.tags;
-  if (!housingPage) return <div>Logement non trouvé.</div>;
   return (
     <div className="housing-page">
       <div className="carrousel">

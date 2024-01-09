@@ -1,10 +1,13 @@
 .drop-down {
-  border-radius: 10px 10px 5px 5px;
+  border-radius: 5px;
   background: $backround-color;
   margin: 30px 0px 0px 0px;
   max-height: 52px;
   transition: max-height 300ms ease-in-out;
   overflow: hidden;
+  @include respond-to($small-screen) {
+    max-height: 32px;
+  }
   .top-bar {
     border-radius: 5px;
     background: $main-color;
@@ -22,10 +25,10 @@
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
-      line-height: 142.6%; /* 34.224px */
+      line-height: 142.6%;
       @include respond-to($small-screen) {
         font-size: 13px;
-        line-height: 142.6%; /* 18.538px */
+        line-height: 142.6%;
       }
     }
     img {
@@ -35,26 +38,27 @@
       }
     }
   }
-}
-.content-container {
-  padding: 20px;
-  // transition: height 400ms ease-in-out;
-  @include respond-to($small-screen) {
-    padding: 10px;
-  }
-  .equipment-list {
-    margin: 0px;
-    color: #ff6060;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 142.6%; /* 25.668px */
-    list-style: none;
-    padding-left: 0px;
+  // }
+  .content-container {
+    padding: 0px 20px;
+    transition: padding 300ms ease-in-out;
     @include respond-to($small-screen) {
-      font-size: 12px;
-      line-height: 142.6%; /* 17.112px */
+      padding: 0px 10px;
+    }
+    .equipment-list {
+      margin: 0px;
+      color: #ff6060;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 142.6%;
+      list-style: none;
+      padding-left: 0px;
+      @include respond-to($small-screen) {
+        font-size: 12px;
+        line-height: 142.6%;
+      }
     }
   }
 }
@@ -64,14 +68,16 @@
 }
 .drop-down.not-collapsed {
   max-height: 1000px;
-  // .content-container {
-  //   height: auto;
-  //   transition: height 400ms ease-in-out;
-  // }
+  .content-container {
+    padding: 20px;
+    @include respond-to($small-screen) {
+      padding: 10px;
+    }
+  }
 }
 .arrow {
   transform: rotate(0deg);
-  transition: transform 400ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 .arrow-rotated {
   transform: rotate(-180deg);
