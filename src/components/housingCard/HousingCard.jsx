@@ -1,5 +1,5 @@
 import React from "react";
-// import data from "../assets/datas/housingData.js";
+
 import { NavLink } from "react-router-dom";
 const HousingCard = ({ housing }) => {
   return (

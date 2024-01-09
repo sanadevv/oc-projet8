@@ -7,6 +7,7 @@ const DropDown = ({ title, content }) => {
   const togglerCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
+
   return (
     <div className={isCollapsed ? "drop-down" : "drop-down not-collapsed"}>
       <div className="top-bar">

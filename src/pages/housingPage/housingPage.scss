@@ -86,7 +86,7 @@
           width: 60px;
           text-align: right;
           font-size: 18px;
-          line-height: 142.6%; /* 25.668px */
+          line-height: 142.6%;
           @include respond-to($small-screen) {
             font-size: 12px;
             margin: 0px;
@@ -107,7 +107,7 @@
         height: 36px;
         flex-shrink: 0;
         @include respond-to($small-screen) {
-          width: 180px;
+          width: 98px;
           height: 18px;
         }
       }

@@ -4,6 +4,10 @@
   justify-content: flex-end;
   list-style: none;
   gap: 20px;
+  padding-left: 0;
+  @include respond-to($small-screen) {
+    gap: 10px;
+  }
   a {
     text-decoration: none;
     li {

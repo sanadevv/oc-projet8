@@ -1,3 +1,5 @@
+import React from "react";
+
 function Banner({ image, text }) {
   return (
     <div className="kasa-banner">
